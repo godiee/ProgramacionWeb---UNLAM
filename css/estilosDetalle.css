@@ -1,0 +1,110 @@
+h2{text-align: center;}
+
+label{
+    display: block; 
+    margin-bottom: 2%;
+}
+    /*Estilos de contenedor1*/
+.contenedor1{
+    display: flex; 
+    justify-content: space-around;
+    margin: 3% 5%;
+    width:75.883em;
+}
+.imagenContenedor1{
+    width: 30%; 
+    margin-right: 30px;
+    background-image: url(../img/covid19.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:solid 5px;
+    border-radius: 5%;
+    background-position: center;
+}
+.descripcionContenedor1{width: 30%;}
+    /*Estilos de contenedor2*/
+.contenedor2{ 
+    display: flex; 
+    justify-content: space-around;
+    margin:3% 5%;
+    padding: 1em;
+    width: 73.883em;
+
+}
+.leyendaYSintomas{width: 40%;}
+
+.test{width: 50%;}
+
+.leyenda{
+    display: flex; 
+    justify-content: space-around; 
+    flex-direction: column;
+    height: 40%;
+}
+
+.sintomas{
+    height: 53.2%; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.test input{
+    padding: 0.3em;
+    border:1px solid #1f53c5;
+    border-radius: 4px;
+}
+
+.anchoMaximo{width: 100%;}
+
+#paises{margin-bottom: 2%;}
+.posicionA{
+    display: flex; 
+    justify-content: space-between;
+    margin: 2% 0%;
+}
+.contenedorLado{width: 45%;}
+
+
+
+.posicionPrecaucion{
+    display: flex;
+    justify-content: center;
+    margin:3% 5%;
+    padding: 1em;
+    width: 73.883em;
+}
+.precaucionContenedor{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.Pregunta{
+    margin-bottom: 0.5em;
+    display: flex;
+    width: 21em;
+    justify-content: space-between;
+}
+
+#enviar{
+    font-size: 0.7em;
+    font-weight: 900;
+    padding: 1em;
+    background: #1f53c5;
+}
+.posicionEnviar{display: flex; justify-content: flex-end;}
+
+.contenedorMapa{
+    margin: 3% 5%;
+    width:75.883em;
+}
+.mapa{width: 100%;}
+
+.error{margin: 1% 0%;}
+
+.error p{
+    margin: 2% 0%;
+    color: red;
+}

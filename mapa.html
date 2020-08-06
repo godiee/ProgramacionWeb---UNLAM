@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mapa</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/estilosMapa.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logoHeader"></div>
+      	<div class="BuscadorContenedor">
+          	<form action="#" method="post">                
+          		<datalist id="buscador">
+            		<option value="Enfermedad 1">
+                	<option value="Enfermedad 2">
+                	<option value="Enfermedad 3">
+                	<option value="Enfermedad 4">
+            	</datalist>                
+            <input class="headerBuscadorTexto" type="text" name="cursos" list="buscador"> 
+        	</form>
+                 
+      	</div> 
+	</header>
+	<main>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="enfermedad.html">ENFERMEDADES</a></li>
+				<li><a href="calendario.html">VACUNACIÓN</a></li>
+				<li><a href="mapa.html">HOSPITALES</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</nav>
+		<h2 class="titulos">HOSPITALES CON TERAPIA INTENSIVA</h2>
+		<div class="contenedorEnlaces">
+			<ul>
+				<li><a href="#posadas" name="modal">Posadas</a></li>
+				<li><a href="#santojanni" name="modal">Hospital Donación Francisco Santojanni</a></li>
+				<li><a href="#italiano" name="modal">Hospital Italiano de Buenos Aires</a></li>
+			</ul>
+		</div>
+		
+		<div id="boxes">
+			
+			<div id="posadas" class="window">
+				<p>Dirección:Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386</p> 
+				<p>Localidad:El Palomar</p>
+				<a href="#"class="close"/>Cerrar</a>
+			</div>
+
+			<div id="santojanni" class="window">
+				<p>Dirección:Pilar 950</p> 
+				<p>Localidad:Mataderos</p>
+				<a href="#"class="close"/>Cerrar</a>
+			</div>
+			
+			<div id="italiano" class="window">
+				<p>Dirección:Pres. Tte. Gral. Juan Domingo Perón 4190</p>
+				<p>Localidad:Almagro</p>
+				<a href="#"class="close"/>Cerrar</a>
+			</div>
+
+			<!-- Mask to cover the whole screen -->
+			<div id="mask"></div>
+		</div>
+		
+		<h2 class="titulos">MAPA DE HOSPITALES DISPONIBLES</h2>
+		<iframe class="mapaDisponible" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.87148464452!2d-58.5753246!3d-34.6302522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef2dc611cc3efabb!2sPosadas!5e0!3m2!1ses-419!2sar!4v1591226705340!5m2!1ses-419!2sar" height="400"></iframe>
+		
+	</main>
+	<footer>
+		<div class="DatosDelGrupo">
+			<h2>Datos Del Grupo</h2>
+			<br>
+			<h3>López Diego - 38615943</h3>
+		</div>
+		<div class="MenuInferior">
+			<h2>Menu inferior</h2>
+			<ul>
+				<li><a href="enfermedad.html">Enfermedades</a></li>
+				<li><a href="calendario.html">Vacunas</a></li>
+				<li><a href="mapa.html">Hospitales</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="RedesSociales">
+			<h2>Redes Sociales</h2>
+			<div class="ContenedorIconos">
+				<a class="Twitter" href="https://www.twitter.com"></a>
+				<a class="Instagram" href="https://www.instagram.com"></a>
+				<a class="Facebook" href="https://www.facebook.com"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

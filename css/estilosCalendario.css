@@ -1,0 +1,21 @@
+h1{
+  text-align: center;
+  margin: 2em 0em;
+}
+
+#calendar {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 50px;
+  z-index: 0;
+  margin-bottom: 2em;
+  background: cadetblue;
+}
+
+@media screen and (max-width: 320px){
+  body{font-size: 70%;}
+  
+  p{
+    font-size: 1em;
+  }
+}

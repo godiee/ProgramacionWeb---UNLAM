@@ -1,0 +1,147 @@
+/*estilos Generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #E5E6E7;
+    padding: 30px;}
+
+.logoHeader{
+    border-radius: 30px;    
+    background-image: url(../img/logo.jpg); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;}
+
+
+.BuscadorContenedor form{
+    width: auto;
+    margin: 20px auto;}
+
+.headerBuscadorTexto{
+    width: 320px;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background:#681777;
+    padding-bottom: 30px;
+    color:white;
+    font-size: 13px;
+    opacity: 0.9;
+    
+}
+
+.ContenedorIconos{display: flex;}
+
+.Facebook{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-image: url(../img/redesSociales/facebook1.png);
+    background-size: contain;
+    background-repeat: no-repeat;}
+
+.Twitter{
+	width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-image: url(../img/redesSociales/twitter.png);
+    background-size: contain;
+    background-repeat: no-repeat;}
+
+.Instagram{
+	width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-image: url(../img/redesSociales/ig.png);
+    background-size: contain;
+    background-repeat: no-repeat;}
+
+.menu{background: #681777;}
+
+.menu ul{
+    display: flex;
+    justify-content: center;}
+
+.menu li{
+    list-style: none;
+    padding: 10px;}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;}
+.menu a:hover{background:#B280BF;}
+.MenuInferior a{text-decoration: none; color: white;}
+/*Fin de Estilos Generales*/
+/*Enfermedad*/
+.tituloEnfermedad{text-align: center;}
+.contenedorFiltro{display: flex; justify-content: center;}
+.inputFiltro{
+    width: 80%;
+    height: 30px;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+.contenedorEnfermedad{
+    display: flex; 
+    justify-content: 
+    center; 
+    margin: 2% 0%;
+}
+.cajaEnfermedad{
+    width: 80%; 
+    display: flex; 
+    justify-content: space-between;
+}
+.configImagenEnfermedad{
+    width: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:solid 5px;
+    border-radius: 5%;
+    background-position: center;
+}
+.infoEnfermedad{width: 70%;}
+.infoEnfermedad p{margin-bottom: 3%;}
+.infoEnfermedad a{
+    padding: 10px; 
+    background:cornflowerblue; 
+    border-radius: 6px;
+    text-decoration: none;
+}
+#imagenCovid19{background-image: url(../img/covid19.jpg);}
+#imagenGripe{background-image: url(../img/gripe.jpg);}
+#imagenVaricela{background-image: url(../img/varicela.jpg);}
+#imagenSarampión{background-image: url(../img/sarampion.jpg);}
+#imagenGripeA{background-image: url(../img/gripeA.jpg);}
+/*Fin de enfermedad*/
+
+/*Responsive general*/
+@media screen and (max-width: 360px){
+    footer{
+        flex-direction: column; 
+        text-align: center; 
+        align-items: center;
+    }
+    footer div{margin-top: 3em;}
+
+    #noMovil{display: none;}
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Detalle Enfermedad</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/estilosDetalle.css">
+	<script src="js/funcionalidadDetalle.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logoHeader"></div>
+      	<div class="BuscadorContenedor">
+          	<form action="#" method="post">                
+          		<datalist id="buscador">
+            		<option value="Enfermedad 1">
+                	<option value="Enfermedad 2">
+                	<option value="Enfermedad 3">
+                	<option value="Enfermedad 4">
+            	</datalist>                
+            <input class="headerBuscadorTexto" type="text" name="cursos" list="buscador"> 
+        	</form>
+                 
+      	</div> 
+	</header>
+	<main>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="enfermedad.html">ENFERMEDADES</a></li>
+				<li><a href="calendario.html">VACUNACIÓN</a></li>
+				<li><a href="mapa.html">HOSPITALES</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</nav>
+		<h2>COVID 19</h2>
+		
+		<section class="contenedor1">
+			<article class="imagenContenedor1"></article>
+			<article class="descripcionContenedor1">La transmisión del SARS-CoV-2 se produce mediante pequeñas gotas —microgotas de Flügge— que se emiten al hablar, estornudar, toser o espirar, que al ser despedidas por un portador (que puede no tener síntomas de la enfermedad o estar incubándola) pasan directamente a otra persona mediante la inhalación, o quedan sobre los objetos y superficies que rodean al emisor, y luego, a través de las manos, que lo recogen del ambiente contaminado, toman contacto con las membranas mucosas orales, nasales y oculares, al tocarse la boca, la nariz o los ojos.</article>
+		</section>
+
+		<h2>FORMULARIO DE DETECCIÓN (TEST) DE CORONAVIRUS (COVID19)</h2>
+		
+		<section class="contenedor2">
+			<article class="leyendaYSintomas">
+				
+				<div class="leyenda">
+					<p>Hola usuario! Si tienes síntomas de COVID19 o has estado en contacto con una persona afectada deberías hacer un control y seguimiento diario de tus síntomas.</p>
+					<p>Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las indicaciones y consejos a seguir en cada caso. El uso de este servicio supone la aceptación de los términos y la política de privacidad descritos en Ver las condiciones y políticas</p>
+				</div>
+				
+				<h2>SÍNTOMAS</h2>
+				
+				<div class="sintomas">
+					<img src="img/1.png" height="100" width="200">
+					<img src="img/2.png" height="100" width="200">
+					<img src="img/3.png" height="100" width="200">
+				</div>
+			</article>
+			
+			<form action="#" onsubmit="return validar()" class="test">
+				<label for="nombreYApellido">Nombre y Apellido</label>
+				<input class="anchoMaximo" type="text" name="nombreYApellido" id="nombreYApellido" requiered>
+				<div class="posicionA">
+					<div class="contenedorLado">
+						<label for="dni">Dni</label>
+						<input class="anchoMaximo" type="number" name="dni" id="dni" >
+					</div>
+					<div class="contenedorLado">
+						<label for="tel">Telefono</label>
+						<input class="anchoMaximo" type="tel" name="tel" id="tel" >
+					</div>
+				</div>
+				<div class="posicionA">
+					<div class="contenedorLado">
+						<label for="ciudad">Ciudad</label>
+						<input class="anchoMaximo" type="text" name="ciudad" id="ciudad" >
+					</div>
+					<div class="contenedorLado">
+						Sexo
+						<br>
+						<input type="radio" name="sexo" id="sexo">M
+						<input type="radio" name="sexo" id="sexo">F
+					</div>
+				</div>
+				¿Has viajado al exterior de la republica Argentina?
+					<input type="radio" name="pregunta1" onclick="mostrarYOcultar()">Si
+					<input type="radio" name="pregunta1" onclick="mostrarYOcultar()">No
+				<br>
+				<br>
+				<div id="paisesVisitados">
+				Paises Visitados <input type="text" name="paises" id="paises" list="paisesLista">
+				<datalist id="paisesLista">
+					<option value="Brazil">
+					<option value="EEUU">
+					<option value="México">
+				</datalist>
+				</div>
+					<div class="Pregunta">
+						<p>¿Tuviste Fiebre mayor a 38 grados?</p>
+						<div class="contenedorRespuestas">
+							<input type="radio" name="pregunta2" value="si">Si
+							<input type="radio" name="pregunta2">No
+						</div>
+					</div>
+					
+					<div class="Pregunta">
+						<p>¿Tuviste dolor de cabeza?</p>
+						<div class="contenedorRespuestas">
+							<input type="radio" name="pregunta3" value="si">Si
+							<input type="radio" name="pregunta3">No
+						</div>
+					</div>
+					<div class="Pregunta">
+						<p>¿Tuviste una tos persistente?</p>
+						<div class="contenedorRespuestas">
+							<input type="radio" name="pregunta4" value="si">Si
+							<input type="radio" name="pregunta4">No
+						</div>
+					</div>
+					<div class="Pregunta">
+						<p>¿Tuviste dolor de garganta?</p>
+						<div class="contenedorRespuestas">
+							<input type="radio" name="pregunta5" value="si">Si
+							<input type="radio" name="pregunta5">No
+						</div>
+					</div>
+					<div class="Pregunta">
+						<p>¿Tuviste dificultad para respirar?</p>
+						<div class="contenedorRespuestas">
+							<input type="radio" name="pregunta6" onclick="mostrarYOcultar()" value="si">Si
+							<input type="radio" name="pregunta6" onclick="mostrarYOcultar()">No
+						</div>
+					</div>
+
+				<div class="posicionA" id="cajaDireccion">
+					<div class="contenedorLado">
+						<label for="dirrecion">Dirección</label>
+						<input class="anchoMaximo" type="text" name="direccion" id="direccion" >
+					</div>
+					<div class="contenedorLado">
+						<label for="tel">Ciudad</label>
+						<input class="anchoMaximo" type="text" name="ciudad2" id="ciudad2" >
+					</div>
+				</div>
+				<div class="posicionEnviar"><input type="submit" value="ENVIAR TEST" id="enviar"></div>
+
+				<div id="mensaje" class="error">
+
+            	</div>
+			</form>
+		</section>
+		
+		<h2>MEDIDAS DE PRECAUCIÓN</h2>
+		
+		<section class="posicionPrecaucion">
+			<article class="precaucionContenedor">
+				<img src="img/14-lavarse-manos.png" height="200" width="200">
+				<img src="img/16-tocar-nariz.png" height="200" width="200">
+				<img src="img/15-estornudar.png" height="200" width="200">
+				<img src="img/17-ventilar.png" height="200" width="200">
+				<img src="img/18-limpiar-objetos.png" height="200" width="200">
+				<img src="img/20-reducir-contacto.png" height="200" width="200">
+				<img src="img/19-permanecer-domicilio.png" height="200" width="200">
+				<img src="img/21-no-compartir-mate.png" height="200" width="200">
+			</article>
+		</section>
+		
+		<h2>HOSPITAL MÁS CERCANO ESPECIALIZADO EN LA ENFERMEDAD</h2>
+		
+		<section class="contenedorMapa">
+			<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.87148464452!2d-58.5753246!3d-34.6302522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef2dc611cc3efabb!2sPosadas!5e0!3m2!1ses-419!2sar!4v1591226705340!5m2!1ses-419!2sar" height="400"></iframe>
+		</section>
+
+	</main>
+	<footer>
+		<div class="DatosDelGrupo">
+			<h2>Datos Del Grupo</h2>
+			<br>
+			<h3>López Diego - 38615943</h3>
+		</div>
+		<div class="MenuInferior">
+			<h2>Menu inferior</h2>
+			<ul>
+				<li><a href="enfermedad.html">Enfermedades</a></li>
+				<li><a href="calendario.html">Vacunas</a></li>
+				<li><a href="mapa.html">Hospitales</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="RedesSociales">
+			<h2>Redes Sociales</h2>
+			<div class="ContenedorIconos">
+				<a class="Twitter" href="https://www.twitter.com"></a>
+				<a class="Instagram" href="https://www.instagram.com"></a>
+				<a class="Facebook" href="https://www.facebook.com"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

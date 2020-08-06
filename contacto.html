@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/estilosContacto.css">
+	<script src="js/funcionalidadContacto.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logoHeader"></div>
+      	<div class="BuscadorContenedor">
+          	<form action="#" method="post">                
+          		<datalist id="buscador">
+            		<option value="Enfermedad 1">
+                	<option value="Enfermedad 2">
+                	<option value="Enfermedad 3">
+                	<option value="Enfermedad 4">
+            	</datalist>                
+            <input class="headerBuscadorTexto" type="text" name="cursos" list="buscador"> 
+        	</form>
+                 
+      	</div> 
+	</header>
+	<main>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="enfermedad.html">ENFERMEDADES</a></li>
+				<li><a href="calendario.html">VACUNACIÓN</a></li>
+				<li><a href="mapa.html">HOSPITALES</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</nav>
+		<section class="contenidoContactoYDatos">
+			<article class="articuloFormulario">
+				<h2>CONTACTO</h2>
+				<form class="formularioContacto" onsubmit="return validar()">
+					<label for="nombreYApellido"></label>
+					<input type="text" name="nombreYApellido" id="nombreYApellido" placeholder="Ingrese nombre y apellido">
+					
+					<label for="email"></label>
+					<input type="text" name="email" id="email" placeholder="Ingrese Email">
+
+					<label for="telefeono"></label>
+					<input type="tel" name="telefono" id="telefono" placeholder="Ingrese telefeono">
+
+					<label for="mensaje"></label>
+					<textarea name="mensaje" id="mensaje" cols="50" rows="10" placeholder="Deja tu mensaje..." onkeyup="countChars(this);"></textarea>
+					<p id="caracteresRestantes">1000 caracteres restantes</p>
+
+					<div class="posicionEnviar"><input type="submit" value="ENVIAR" id="enviar"></div>
+					
+				</form>
+				<div id="errorMensaje"></div>
+			</article>
+			<article class="articuloDatos">
+				<h2>DATOS DE CONTACTO</h2>
+				<p>Direcciòn: Mariquita thompson 189, La matanza, Villa madero</p>
+				<p>Telèfono: 4469-9300</p>
+				<p>Celular: 1169039228</p>
+				<p>email: ProgramacionWeb2020@hotmail.com</p>
+				<p>Web: https://www.ProgramacionWeb.com</p>
+			<div class="RedesSociales">
+				<div class="ContenedorIconos">
+				<div class="Twitter"></div>
+				<div class="Instagram"></div>
+				<div class="Facebook"></div>
+			</div>
+			</article>
+		</section>
+		<h2 class="ubicacionTitulo">UBICACIÒN</h2>
+		<section class="contenidoMapa">
+			<iframe class="mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.9742684433045!2d-58.50869805070221!3d-34.68059889079208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8d89c007ded%3A0x47afe76aa2cb545!2sMariquita%20Thompson%20189%2C%20B1751AYC%20La%20Tablada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1592539640429!5m2!1ses-419!2sar"></iframe>
+		</section>
+	</main>
+	<footer>
+		<div class="DatosDelGrupo">
+			<h2>Datos Del Grupo</h2>
+			<br>
+			<h3>López Diego - 38615943</h3>
+		</div>
+		<div class="MenuInferior">
+			<h2>Menu inferior</h2>
+			<ul>
+				<li><a href="enfermedad.html">Enfermedades</a></li>
+				<li><a href="calendario.html">Vacunas</a></li>
+				<li><a href="mapa.html">Hospitales</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="RedesSociales">
+			<h2>Redes Sociales</h2>
+			<div class="ContenedorIconos">
+				<a class="Twitter" href="https://www.twitter.com"></a>
+				<a class="Instagram" href="https://www.instagram.com"></a>
+				<a class="Facebook" href="https://www.facebook.com"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

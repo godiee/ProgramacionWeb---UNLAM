@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Calendario de vacunacion</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/estilosCalendario.css" media="screen">
+	<link href="css/fullcalendar.min.css" rel='stylesheet'>
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="js/calendario.js"></script>
+</head>
+<body>
+	<header>
+		<div id="noMovil" class="logoHeader"></div>
+      	<div class="BuscadorContenedor">
+          	<form action="#" method="post">                
+          		<datalist id="buscador">
+            		<option value="Enfermedad 1">
+                	<option value="Enfermedad 2">
+                	<option value="Enfermedad 3">
+                	<option value="Enfermedad 4">
+            	</datalist>                
+            <input class="headerBuscadorTexto" type="text" name="cursos" list="buscador"> 
+        	</form>
+          </div>         	     	
+	</header>
+	<main>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li id="noMovil"><a href="enfermedad.html">ENFERMEDADES</a></li>
+				<li id="noMovil"><a href="calendario.html">VACUNACIÓN</a></li>
+				<li id="noMovil"><a href="mapa.html">HOSPITALES</a></li>
+				<li id="noMovil"><a href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</nav>
+
+		<h1>Calendario de Vacunas</h1>
+		
+		<article id='calendar'></article>
+	</main>
+	<footer>
+		<div class="DatosDelGrupo">
+			<h2>Datos Del Grupo</h2>
+			<br>
+			<h3>López Diego - 38615943</h3>
+		</div>
+		<div class="MenuInferior">
+			<h2>Menu inferior</h2>
+			<ul>
+				<li><a href="enfermedad.html">Enfermedades</a></li>
+				<li><a href="calendario.html">Vacunas</a></li>
+				<li><a href="mapa.html">Hospitales</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="RedesSociales">
+			<h2>Redes Sociales</h2>
+			<div class="ContenedorIconos">
+				<a class="Twitter" href="https://www.twitter.com"></a>
+				<a class="Instagram" href="https://www.instagram.com"></a>
+				<a class="Facebook" href="https://www.facebook.com"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

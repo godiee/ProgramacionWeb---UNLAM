@@ -1,0 +1,52 @@
+/*Mapa*/
+.mapaDisponible{width: 100%; margin: 3% 0%;}
+.titulos{text-align: center; margin-top: 3%;}
+/*Estilos enlaces*/
+.contenedorEnlaces{text-align: center; margin-top: 1%;}
+.contenedorEnlaces li{margin-bottom: 0.5%;}
+.contenedorEnlaces a {color:#333; text-decoration:none}
+.contenedorEnlaces a:hover {color:#ccc; text-decoration:none}
+/*Estilos popup*/
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+
+#boxes .window {
+  position:fixed;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+#boxes #posadas {
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:#ffffff;
+}
+
+#boxes #santojanni {
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:#ffffff;
+}
+
+#boxes #italiano {
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:#ffffff;
+}
+
+.close{position: absolute; bottom: 0px;}
+#boxes p{margin-bottom: 2%;}

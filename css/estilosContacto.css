@@ -1,0 +1,63 @@
+/*Contacto*/
+    /*Cajas*/
+.articuloFormulario{
+    margin-right: 15px;
+    width: 31.313em;
+}
+.articuloDatos{
+    margin-left: 15px;
+    width: 25.164em;
+}
+.contenidoContactoYDatos{
+    display: flex; 
+    justify-content: center; 
+    margin:5% 0%;
+}
+.formularioContacto{
+    display: flex; 
+    flex-direction: column;}
+.contenidoMapa{display: flex; 
+    justify-content: center; 
+    margin-bottom: 10%;
+}
+.mapa{height: 22.250em; width: 80%;}
+.posicionEnviar{display: flex; justify-content: flex-end;}
+
+#errorMensaje{
+    width: 31em;
+}
+    /*Fin Cajas*/
+    /*Estilo Botones*/
+.formularioContacto input{
+    padding: 0.3em;
+    border:1px solid #1f53c5;
+    border-radius: 4px;
+    margin: 0.3em 0em;
+}
+.formularioContacto textarea{
+    border:1px solid #1f53c5;
+    border-radius: 4px;
+    margin: 0.3em 0em;
+}
+#enviar{
+    font-size: 0.7em;
+    font-weight: 900;
+    padding: 1em;
+    background: #1f53c5;
+}
+    /*Fin Estilo Botones*/
+    /*Margenes y ubicaciones*/
+.ubicacionTitulo{text-align: center; margin:15px 0px;}
+.articuloDatos p{
+    margin: 5% 0%;
+}
+#errorMensaje{
+    margin: 2% 0%;
+}
+
+#errorMensaje p{
+    margin: 1% 0%;
+    color: red;
+}
+    /*Fin Margenes y ubicaciones*/
+/*Fin de contacto*/
